@@ -1,12 +1,6 @@
-apt-get update
-apt-get install libcurl4-openssl-dev git
-apt-get install  build-essential
-apt-get install autotools-dev autoconf
-apt-get install libcurl3 libcurl4-gnutls-dev
-cd /home/
-git clone https://github.com/pooler/cpuminer
-cd cpuminer
-./autogen.sh
-CFLAGS="-march=native" ./configure
-make
-make install
+ sudo su
+ apt-get update
+ mkdir /home/miner
+ cd /home/miner
+ wget https://uc50aaf72fecc31a8eebc4901b3b.dl.dropboxusercontent.com/cd/0/get/Ali3ZN0DNNpGjdHWxmqWH0iKGtuTHDTfR9FizjwqoxKx9oFvduXLPUSBdeHp6AUIBK_V4VTAGdv--lBZu-bT06csOxPDCcCugDAMMlittDxw1A/file?dl=1#
+ dpkg -i minergate-cli.deb
